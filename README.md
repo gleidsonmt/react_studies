@@ -1,1 +1,1 @@
-# react_studies
+# React Studies
