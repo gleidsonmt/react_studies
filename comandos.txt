@@ -3,3 +3,5 @@ npm create vite@latest
 cd ['nomeapp']
 npm i
 npm run dev
+
+
