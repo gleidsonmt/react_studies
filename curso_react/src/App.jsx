@@ -1,15 +1,17 @@
 import './App.css'
 import HelloWorld from './components/HelloWorld';
+import Pessoa from './components/Pessoa';
+import SayMyName from './components/SayMyName';
 
 function App() {
-  
-  const name = 'Gleidson'.toUpperCase(); 
-
+  let name = 'Gleidson'
+  let age = '28'
+  let role = 'Programador'
   return (
     <>
-      <h1>Hello</h1>
-      <p>{name}</p>
       <HelloWorld/>
+      <SayMyName name='Gleidson'/>
+      <Pessoa name={name} age={age} role={role}/>
     </>
   )
 }
