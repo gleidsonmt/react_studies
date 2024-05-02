@@ -1,10 +1,10 @@
-export default function Pessoa(props) {
+export default function Pessoa({ name, age, role, avatar }) {
     return (
         <>
-        <img src="props.foto" alt={props.name} />
-        <h2>Nome: {props.name}</h2>
-        <p>Idade: {props.age}</p>
-        <p>Profissao: {props.role}</p>
+        <img src={avatar} alt="My Picture" />
+        <h2>Nome: {name}</h2>
+        <p>Idade: {age}</p>
+        <p>Profissao: {role}</p>
         </>
     )
 }

@@ -1,0 +1,50 @@
+criar publico personalizado
+
+criar e salvar publico depois na edicao
+voce pode colocar mais
+depois tem o botao limitar publico
+
+
+
+4 - X Toscana.
+5 - X Bacon.
+6 - X Calabresa.
+7 - X Filé.
+8 - X Tudo.
+9 - X Filé Tudo.
+10 - X Frango.
+11 - X Frango Catupiry.
+12 - X Bagunça.
+13 - X Top 10.
+14 - X Top 10 Tudo.
+15 - X Cachorro Quente.
+16 - X Misto Quente.
+
+
+Success! 
+Carrinho:
+{% for product in widgets.function_2.parsed.products %}
+- Nome: *{{ product.name }}*
+- Preço: *R$ {{product.price}}*
+{% endfor %}
+Total :
+{{ widgets.function_2.parsed.total}}
+Ir para modo de pagamento ou escolher outro pedido?
+1 - Pagamento
+2 - Novo pedido
+
+  console.log('product 1', event.props)
+  console.log('product 2', event.props.product_name)
+  console.log('product 3', event)
+  console.log('product 4', event.product_name)
+  console.log('product 5', event.product_name)
+
+  if (event.props != null) {
+
+    console.log('product props = ', event.props.product_price)
+
+    client.items.push({
+      name: "my Product"
+    });
+    //product.nome = event.product.product.price
+  }

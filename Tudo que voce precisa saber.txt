@@ -1,0 +1,14 @@
+Tudo que voce precisa saber
+para fazer terapia neural
+Um final de semana exclusivo com Dr André Gasparin.
+
+Tecnicas comprovadas, 
+vire a chave da sua carreira,
+vem fazer a diferença em sua carreira.
+
+Clique no botão abaixo agora mesmo para saber mais.
+
+
+{% for product in widgets.function_2.parsed.products %}
+- {{ product.name }}
+{% endfor %}
