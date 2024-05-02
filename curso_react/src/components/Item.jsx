@@ -1,8 +1,13 @@
+import PropTypes from 'prop-types'
 
-export default function Item(props) {
+export default function Item({ marca, ano_lancamento }) {
     return (
         <>
-        <li>{props.marca}</li>
+        <li>{marca} - {ano_lancamento}</li>
         </>
     )
+}
+
+Item.propTypes = {
+    marca: PropTypes.string
 }
