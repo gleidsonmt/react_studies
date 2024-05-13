@@ -1,0 +1,39 @@
+.footer {
+    background-color: #222;
+    color: #FFF;
+    padding: 1.45em;
+    text-align: center;
+    width: 100%;
+}
+
+.soical_list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 40px;
+}
+
+.soical_list li {
+}
+
+.soical_list svg {
+    font-size: 1.5em;
+}
+
+.soical_list li:hover {
+    color: #ffbb33;
+}
+
+.soical_list svg:hover {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.copy_right {
+    margin-top: 2em;
+}
+
+.copy_right span {
+    font-weight: bold;
+    color: #ffbb33;
+}
