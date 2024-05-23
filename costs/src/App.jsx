@@ -11,6 +11,7 @@ import Navbar from "./components/layout/Navbar";
 import Projects from "./components/pages/Projects";
 import Footer from "./components/layout/Footer";
 import NewProject from "./components/pages/NewProject";
+import Project from "./components/pages/Project";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -25,6 +26,7 @@ function App() {
           <Route path="/company" element={<Company />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/newproject" element={<NewProject />}></Route>
+          <Route path="/project/:id" element={<Project />}></Route>
         </Routes>
       </Container>
       <Footer />
