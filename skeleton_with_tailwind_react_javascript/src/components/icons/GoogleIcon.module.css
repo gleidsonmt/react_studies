@@ -1,0 +1,54 @@
+
+.googleIcon {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.googleIconOutlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+.googleIconAnimation { 
+    animation: pulse 3s infinite;
+}
+
+.googleIconTransition:hover {
+    animation: ani 1s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}
+
+@keyframes ani {
+    0% {
+      font-variation-settings: 'FILL' 0.25;
+    }
+    50% {
+      font-variation-settings: 'FILL' 0.5;
+    }
+    100% {
+      font-variation-settings: 'FILL' 1;
+    }
+    
+  }
+
+@keyframes pulse {
+    0% {
+      font-variation-settings: 'wght' 100;
+    }
+    50% {
+      font-variation-settings: 'wght' 700;
+    }
+    100% {
+      font-variation-settings: 'wght' 100;
+    }
+
+    
+  }
+
