@@ -8,8 +8,6 @@ import Footer from "./layout/Footer";
 
 function App() {
 
-
-
   return (
     <Router>
       <Navbar />
