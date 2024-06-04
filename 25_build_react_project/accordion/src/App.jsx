@@ -3,10 +3,8 @@ import "./App.css";
 import Accordian from "./components/accordian";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div>
+    <div className="wrapper">
       <Accordian></Accordian>
     </div>
   );
