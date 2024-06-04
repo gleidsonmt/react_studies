@@ -8,8 +8,15 @@
         "id": "3",
         "name": "Design"
       },
-      "cost": 0,
-      "services": []
+      "cost": 500,
+      "services": [
+        {
+          "name": "Contratar PHP",
+          "cost": "500",
+          "description": "description",
+          "id": "0e16aea7-967f-4176-8330-26f8f9afe7ee"
+        }
+      ]
     }
   ],
   "categories": [

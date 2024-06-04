@@ -8,12 +8,14 @@ import Message from "../layout/Message";
 import ProjectForm from "../project/ProjectForm";
 import ServiceForm from "../service/ServiceForm";
 import { parse, v4 as uuidv4 } from "uuid";
+import ServiceCard from "../service/ServiceCard";
 
 const Project = () => {
   const { id } = useParams();
   const [project, setProject] = useState([]);
   const [showProjectForm, setShowProjectForm] = useState(false);
   const [showServiceForm, setShowServiceForm] = useState(false);
+  const [services, setServices] = useState([]);
   const [message, setMessage] = useState();
   const [type, setType] = useState();
 
@@ -30,8 +32,9 @@ const Project = () => {
         })
         .then((data) => {
           setProject(data);
+          setServices(data.services);
         })
-        .catch((error) => console.log("error"));
+        .catch((error) => console.log(error));
     }, 5);
   }, [id]);
 
@@ -66,7 +69,7 @@ const Project = () => {
     })
       .then((resp) => resp.json())
       .then((data) => {
-        console.log(data);
+        setShowServiceForm(false);
       })
       .catch((err) => console.log(err));
   }
@@ -105,6 +108,8 @@ const Project = () => {
       })
       .catch((error) => console.log(error));
   }
+
+  function removeService() {}
 
   return (
     <>
@@ -156,7 +161,19 @@ const Project = () => {
             </div>
             <h2>Servicos</h2>
             <Container customClass="start">
-              <p>Itens de Servicos</p>
+              {services.length > 0 &&
+                services.map((el) => (
+                  <ServiceCard
+                    id={el.id}
+                    name={el.name}
+                    cost={el.cost}
+                    description={el.description}
+                    key={el.id}
+                    handleRemove={removeService}
+                  />
+                ))}
+
+              {services.length === 0 && <p>Não há serviços cadastrados</p>}
             </Container>
           </Container>
         </div>
